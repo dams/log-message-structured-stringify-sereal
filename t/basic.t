@@ -18,7 +18,5 @@ ok $e;
 use MIME::Base64;
 like decode_base64("$e"), qr/^=srl/, "it's a base64 encoded sereal string";;
 
-like "$e", qr/^PXNybAEAV2ll/, 'the string looks properly encoded';
-
 done_testing;
 
